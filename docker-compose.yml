@@ -4,3 +4,5 @@ solr:
   command: -Xmx1024m -DSTOP.PORT=8079 -DSTOP.KEY=stopkey -jar start.jar
   volumes:
     - "./conf:/opt/solr/example/solr/collection1/conf/"
+  ports:
+    - "8983:8983"
