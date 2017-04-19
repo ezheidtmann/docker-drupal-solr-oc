@@ -1642,7 +1642,7 @@
 
           <!-- Minimum frequency of terms to consider when building the dictionary
           0 == all terms -->
-          <float name="threshold">0.0</float>
+          <float name="threshold">0.005</float>
           <str name="buildOnCommit">true</str>
           <str name="suggestAnalyzerFieldType">suggest_string</str>
 
@@ -1658,7 +1658,7 @@
 
         <str name="spellcheckIndexDir">./spellchecker-fuzzy</str>
 
-        <float name="threshold">0.0</float>
+        <float name="threshold">0.005</float>
         <str name="buildOnCommit">true</str>
         <str name="suggestAnalyzerFieldType">suggest_string</str>
         <str name="comparatorClass">score</str>
@@ -1675,7 +1675,7 @@
           <!-- Enable fuzzy search for more liberal results; they will be interleaved with the infix results -->
           <!-- <str name="spellcheck.dictionary">word_suggest_fuzzy</str> -->
           <str name="spellcheck.onlyMorePopular">true</str>
-          <str name="spellcheck.count">10</str>
+          <str name="spellcheck.count">30</str>
           <str name="spellcheck.collate">false</str>
       </lst>
       <arr name="components">
