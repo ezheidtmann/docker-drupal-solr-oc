@@ -1642,7 +1642,7 @@
 
           <!-- Minimum frequency of terms to consider when building the dictionary
           0 == all terms -->
-          <float name="threshold">0.005</float>
+          <float name="threshold">0.000</float>
           <str name="buildOnCommit">true</str>
           <str name="suggestAnalyzerFieldType">suggest_string</str>
 
@@ -1658,7 +1658,7 @@
 
         <str name="spellcheckIndexDir">./spellchecker-fuzzy</str>
 
-        <float name="threshold">0.005</float>
+        <float name="threshold">0.000</float>
         <str name="buildOnCommit">true</str>
         <str name="suggestAnalyzerFieldType">suggest_string</str>
         <str name="comparatorClass">score</str>
